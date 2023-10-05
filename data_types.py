@@ -72,6 +72,10 @@ print ("The item {} is repeated {} times".format(element, count))
 print "The item %i is repeated %i times"% (element, count)
 
 
+
+
+
+
 #Lists #
 # A list can contain a series of values.
 # List variables are declared using brackets [] following
@@ -108,6 +112,48 @@ MyTable = [[[][]],[[][]]]
 
 myGroup ('Rhino', 'Grasshopper', 'Flamingo', 'Bongo')
 
+#Practice
+
+# list of names
+names = ["Jane", "John", "Mary", "Sam", "Safi"]
+print(names)
+
+# print the first three names
+print(names[0:3])
+
+# Add a name at the head of the list
+names.insert(0, "Nia")
+print(names)
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+# Append
+numbers.append(5)
+print(numbers)
+# Insert
+numbers.insert(3, 10)
+print(numbers)
+
+# Remove
+numbers.remove(3)
+print(numbers)
+
+
+# Clear
+numbers.clear() 
+
+# In 
+print(10 in numbers)
+# Len
+print (len(numbers))
+
+
+
+
+
+
+
+
 
 
 # Dictionary #
@@ -138,6 +184,23 @@ print ('isaac' in room_num) #test to see if 'isaac' is in the dictionary. return
 
 
 
+
+#Practice
+
+#For Loops
+numbers = [1, 2, 3, 4, 5,]
+for item in numbers:
+    print (item)
+
+#Range function
+    # The function can have 1 to 3 arguments.
+
+    # 1. generate numbers up to a value
+    numbers = range(5)
+    for number in numbers:
+        print(number)
+
+#Tuples
 
 
 
