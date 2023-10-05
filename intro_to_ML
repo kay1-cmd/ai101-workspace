@@ -1,0 +1,44 @@
+There are multiple ways to acieve Artificial intelligence.
+One way is through Machine Learning.
+
+Traditional Programming
+
+program + data = output
+
+Machine Learning
+Output + Multiple Data = Program & More Output/New Data
+
+Machine learning is a subset of AI
+It consists of the techniques that enable computers to learn from the
+data and deliver AI applications
+
+We consider a computer program capable of learning if it can:
+- Complete a task T
+- Improve with experience E
+- Based on its performance P
+
+Ex. Email Providers employinh a combination of ML techniques to learn and identify spam mail by prev. identified spam messages
+
+Task: Classify emails as spam or not spam
+Experience: Analyze emails and compare to human-labeled spam
+Performance: percentage of emails correctly classified as spam
+
+The are subsets of Machine Learning: e.g Supervised learning, unsupervised learning, and reinforcement learning
+
+Supervised learning focuses on predicting outcomes for new unseen data
+
+Goal: predict outcomes for new data
+
+Accomplised by learning a model from previous examples (data) and their outcomes
+
+Apply the learned model to the new data to predict outcomes
+
+
+Unsupervised Learning seeks to drwa insights from larger data
+
+Goal: draw insights from large volumes of data
+
+Accomplished by discovering hidden patterns in data without the need for human intervention
+
+
+
