@@ -1,0 +1,51 @@
+import numpy as np # linear algebra
+import pandas as pd # data processing, CSV file I/O
+import matplotlib.pyplot as plt # for data visualization
+
+
+#load dataset into a dataframe
+df = pd.read_csv("fashion_products.csv")
+
+#observe first five lines of dataframe
+df.head(5)
+
+# Use the shape member variable to observe the shape of our dataset. 
+df.shape
+
+#  See a summary of the data to check for null values
+df.info()
+
+# View which column labels remain in the dataframe
+df.columns
+
+#Inspect statistical information about the data set 
+df.describe()
+
+#Write code to view the labels of a specific categorical variable
+df['Category'].unique()
+df['Brand'].unique()
+df['Color'].unique()
+
+#Write code to view how many different labels there are in a specific categorical variable
+len(df['Brand'].unique())
+
+#Get the categorical variable you want to generate a pie chart for
+brand = df['Brand']
+
+#List the set of unique values for this variable
+
+print(brand.unique())
+
+# Generate a pie chart for the number of instances of data points (songs) for each artist
+brand.value_counts().plot(kind='pie')
+
+#Generate a new histogram with a categorical or discrete numerical variable
+df[['Rating']].hist()
+
+#Set X variable
+x = df['Brand']
+#Set Y variable
+y = df['Price']
+# Generate a new scatter plot for a different pair of variables
+plt.scatter(x,y)
+
