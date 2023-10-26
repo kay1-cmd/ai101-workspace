@@ -1,0 +1,54 @@
+Data is any set of charachters that is gathered and translated for some purpose. 
+It is not put into contect and doesn't mean anything to a human or a computer.
+
+Ex. a set of data: The letter A, an image of a cat, a phrase, a video of a
+puppy playing with a toy. These all don't come with a connections so they don't mean
+anything yet.
+
+
+
+Types of Data
+
+Qualitative Data is informationt hat cnanot be ocunted, measured or easily 
+expressed using numbers.
+    Ex: photos, audio recordings, open-ended surveys
+
+Quantitative Data is Data that can be counted or measured in numbers
+
+
+
+
+Types of Quantitative Data
+
+Categorical Data can be identified by labels given to them
+
+Numerical Data consists of numbers
+    Continuous data can be measured on an infinite scale. 
+    We can take any value between two numbers, no matter how small.
+    Ex. height and weight
+
+    Discrete Data can be measured by a limited number of possible values
+    Ex. Age, number of movies watched
+
+
+How do to get data?
+
+There are open sources of data on the internet via public paltoforms.
+
+For example, Kaggle is a website where we can find publicly available data sets,
+build models, and practice coding.
+
+When taking data from these platforms, we want to look for metadata.
+
+Metadata is data that provides information about other data, but not the
+content of the data, such as the text of a message or the image itself.
+
+    Ex. Kaggle datasets have information about the author, source of the data,
+    creation daate, last modification, file size, etc.
+
+
+
+
+
+
+

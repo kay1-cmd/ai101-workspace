@@ -1,0 +1,8 @@
+There are four operations to clean data used in supervised and unsupervised
+learning:
+    Completing missing information
+    Correcting aberrant values and outliers
+    Converting fields to the correct format for calcualtions and presentation
+    Creating new features for analysis
+
+

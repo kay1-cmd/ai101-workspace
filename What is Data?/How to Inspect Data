@@ -1,0 +1,45 @@
+Comma-Separated Values are plain text files that contain a list of data
+    comma labels in first row
+    data values in remaining rows
+
+
+Inspecting data with pandas
+
+CSV files can be loaded into python using data frames
+We use pandas library which supports data frames
+
+Importing the pandas library
+    import pandas 
+    import pandas as pds
+
+Data frames (df) are an object that we construct from a CSV file
+    df = pandas.read_csv(fileName.csv)
+
+
+head & tail
+
+indexing starts at 0
+
+To look at the first five rows of the data frame
+    df.head()
+
+To look at the first n rows of the data frame
+    df.head(n)
+
+Tail works the same way, but looks at the last rows of the data frame.
+To look at the last two rows
+    df.tail(2)
+
+To look at the last n rows of the data frame
+    df.tail(n)
+
+
+columns
+
+To look at the column names from our data frame
+    df.columns
+    Index(['int', 'strings', 'floats'], dtype='object')
+
+If we want to convert the object into a traditional python list object
+    list(df.columns)
+    ['ints','strings','floats']
