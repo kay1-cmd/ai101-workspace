@@ -6,3 +6,141 @@ learning:
     Creating new features for analysis
 
 
+Intro to Data Exploration and Visualization
+
+Case Study: Spotify dataset from Kaggle.com
+
+Using dataframs and working with numerical and categorical data
+
+The spotify dataset contains audio statistics of the top 2000 tracks on Spotify from 2000-2019. The data contains columns describing the track and its qualities.
+
+
+Collecting the data
+    import required libraries for the dataframe and visualization
+
+    import numpy as np (linear algebra)
+    import pandas as pd (data processing, CSV file I/O (e.g. pd.read_csv))
+    import matplotlib.pyplot as plt (for data visualization)
+
+    load data into datafram using pandas. Observing spotify.csv dataset
+
+    df = pd.read_csv("spotify.csv")
+
+
+Examine the Data
+    use the head function to observe data
+    df.head()
+
+    observe the size of the dataset. use the shape attribute of the dataframe. The tuple consist of (row, columns)
+    df.shape
+
+    get a summary of the data to check for null values
+    df.info()
+
+    see what type of column labels we have. use the columns member variable
+    df.columns
+
+    inspect the statistical information (e.g. mean, median, mode, etc.) usig describe function
+    df.describe()
+
+    explore categorical variables:
+    view labels in the 'popularity' variable
+    df['popularity'].unique()
+
+    view how many different labels there are for popularity
+    len(df['popularity'].unique())
+
+    view the labels in the key variable
+    df['key'].unique()
+
+    view how many different labels there are in key
+    len(df['key'].unique())
+
+    view the labels in the genre variable
+    df['genre'].unique()
+
+    view how many different labels there are in genre
+    len(df['genre'].unique())
+
+
+    we need to know how many unique labels we have per column when it comes to categorical data. If the # of unique categories is smaller than the total number of elements (2000) in our dataset, we know the labels are good ways for us to group the data.
+
+    view the labels in the song variable
+    df['song'].unique()
+
+    view how many different types of labels  there are in song
+    len(df['song'].unique())
+
+
+    if we inspect the song variable, however, we see that there are 1879 unique labels in this variable. 
+
+
+    The total number of instances in the dataset is 2000 so these two varaibales are approx. unique identifiers for each of the instances. We can't effevtively find patterns, groups, or additonal information from unique identifiers. So we will not typically use it.
+
+
+Visualize the Data
+    To visualize our data we'll populate three types of plots: pie chart, histogram, and scatter plot.
+
+
+    Pie charts provide a good visualization of the distribution of categorical data.
+
+    Each category is represented by a slice of the pie chart. If all of the slices are relatively even for a particular variable, then our dataset is likely to have high entropy with repect to that variable.
+
+    get the categorical varaible we want to generate a pie chart for
+    genres = df['genre']
+
+    list the set of unique values for this variable
+    print(genres.unique())
+
+
+    generate a pie chart for the number of instances of data points (songs) for each artist
+    genres.value_counts().plot(kind='pie')
+
+
+
+    Histograms provide a visualization of the distribution of both categorical data and discrete numerical data. Each column corresponds to a particular value (like a year). The height of the column represents the number of data points for which the variable takes that value.
+
+    generate a histogram for a particular variable
+    df[['year']].hist()
+
+
+
+    Scatter Plots provide a visualization of the relation betweem two variables. The visualization can reveal either trends (i.e. a line should fit the data) or clusters (i.e. can draw boundaries between groups of data points)
+    Works well for continuous numerical data. We will use the same function for generating a scatter plot as used in lab 1 with matplotlib library
+
+    set X variable
+    x = df['loudness']
+
+    Set Y variable
+    y = df['energy']
+
+    plot 
+    plt.scatter(X,Y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
